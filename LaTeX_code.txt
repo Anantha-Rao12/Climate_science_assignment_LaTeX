@@ -1,0 +1,192 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage[margin=1in,includefoot]{geometry}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{hyperref}
+
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+%Header and Footer Stuff
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+    \line(1,0){300}\\
+    [0.25in]
+    \Huge{\bfseries ECS 202 Assignment}\\
+    \line(1,0){200}\\
+    [1.5cm]
+    \textsc{\huge{Ocean Acidification}}\\
+    [10cm]
+    \end{center}
+    \begin{flushright}
+    \textsc{\Large{Anantha S Rao. \\[0.25cm]
+    Reg no: 20181044\\[0.35cm]
+    Feb 14, 2020}}
+    \end{flushright}
+
+\end{titlepage}
+
+
+\section{\LARGE PART A}
+    \subsection{\large 
+    \underline{The Oceanic Carbonate Buffer and its pH regulation:}}
+    The Ocean is a rich source of Minerals, especially Carbonates, Sulphates, and Chlorides. The term ‘\textbf{Oceanic Carbonate buffer}’ is used to describe how the dissolved inorganic carbon system in seawater acts to diminish changes in ocean H+ concentration, and thus pH. \cite{Theroyalscoiety2005}.
+    
+    Carbon dioxide from the atmosphere dissolves in seawater by reacting with the water molecules ($H_{2}O$) to form carbonic acid ($H_{2}CO_{3}$).
+    \begin{center}
+     $[$CO_{2}$]_g$ + $[$H_{2}O$]_{aq}$ \longrightarrow $[$H_{2}CO_{3}$]_{aq}$     
+    \end{center}
+    
+    It is important to note that not all the $CO_{2}$ dissolved in seawater reacts to make carbonic acid, and therefore, seawater contains some amount of dissolved gaseous $CO_{2}$.The carbonic acid in solution and carbon dioxide in the atmosphere are related via \textbf{Henry’s law}: The concentration of $CO_{2}$ in air is proportional to that of the solution of carbonic acid.
+    \begin{center}
+     [$H_{2}CO_{3}$] = $K_{H}$*$pCO_{2}$ \rightline{$K_{H}$ is Henry Constant for $CO_{2}$}
+    \end{center}
+    
+    Carbonic acid is a \textbf{weak diprotic} acid and partly dissociates first into a bicarbonate ion ($HCO_{3}^{-}$) and a proton, and subsequently, the bicarbonate dissociates partly into carbonate ion ($CO_{3}^{2-}$) and a proton. The relevant reactions are:
+    
+    \begin{center}
+     $[H_{2}CO_{3}]_{aq}$ \longleftrightarrow $[HCO_{3}^{-}]_{aq}$ + $H^{+}_{aq}$\\
+     $[HCO_{3}^{-}]_{aq}$ \longleftrightarrow $[CO_{3}^{2-}]_{aq}$ + $H^{+}_{aq}$\\
+    \end{center}
+    
+    For which we can write equilibrium relations:
+    
+    \begin{center}
+     $K_1$ = $\frac{[HCO_{3}^{-}][H^{+}]}{[H_{2}CO_{3}]}$ \approx $10^{-6.35}$\\
+     $K_2$ = $\frac{[CO_{3}^{2-}][H^{+}]}{[HCO_{3}^{-}]}$ \approx $10^{-10.3}$
+    \end{center}
+    
+    The relative concentrations of $[H_{2}CO_{3}]$, $[HCO_{3}^{-}]$ and $[CO_{3}^{2-}]$ are governed by the pH (ie $-log_{10}[H+]$) of the solution. Carbonic acid is the dominant species at pH values below the pK1 ($-log_{10}K1$), bicarbonate dominates between the pK1 and pK2 values and the carbonate ion dominates at pH values above the pK2.\cite{middelburg2019biogeochemical}\\
+    
+    In a process, such as $CO_{2}$ dissolution, \textbf{addition of H+} to seawater, results in consumption of H+ by carbonate ($[CO_{3}^{2-}]$) ion that is later converted into bicarbonate ($[HCO_{3}^{-}]$). Since initially most of the added H+ would be consumed in this way, the \textbf{change in pH is much less} than it would otherwise be. However, this process also consumes some carbonate ion and thus pH buffering capacity would diminish as $CO_{2}$ concentrations increase.
+    
+    
+    Interaction with $CaCO_{3}$-rich sediments further tends to buffer the chemistry of the seawater so that changes in pH are diminished. Dissolution of carbonate minerals provides $[CO_{3}^{2-}]$ ions that can react to consume H+. Thus, the dissolution of carbonate minerals tends to decrease [H+] (increase pH).However the $H_{2}CO_{3}$ formed yields $CO_{2}_g$ and $H_{2}O_{aq}$ (in excess).
+    $CO_{2}_g$  diffuses from the ocean to the atmosphere, thereby maintaining the pH.\cite{kump2004earth}\\
+    
+    Thus Carbonate Buffer acts to \textbf{stabilise the average pH of seawater} at approximately pH = 8 because of the following two processes: (i) uptake of CO2 from the atmosphere and (ii) interaction of seawater with oceanic sediments composed of $CaCO_{3}$. Since $CaCO_{3}$ is abundant in sediments, the pH of the deep oceans cannot change by large amounts over timescales of 10,000 years. However, over historical timescales, significant changes in surface and near surface ocean pH can occur.
+    
+    
+    
+    
+    
+    
+    
+     \subsection{\large 
+    \underline{Le Chatlier’s principle to explain pH change with Atmospheric {CO_2}}}
+    Following are the equations depicting the Dynamic equilibrium between Oceanic $CO_{3}^{2-}_{aq}$ and Atmospheric $CO_2_{g}$:
+    
+    \begin{enumerate}
+        \item $[$CO_{2}$]_g$ + $[$H_{2}O$]_{aq}$ \longleftrightarrow $[$CO_{2}$]_{aq}$ +$[$H_{2}O$]_{aq}$ 
+        
+        \item $[$CO_{2}$]_aq$ + $[$H_{2}O$]_{aq}$ \longleftrightarrow $[$H_{2}CO_{3}$]_{aq}$ 
+        
+        \item $[H_{2}CO_{3}]_{aq}$ \longleftrightarrow $[HCO_{3}^{-}]_{aq}$ + $H^{+}_{aq}$
+        
+        \item $[HCO_{3}^{-}]_{aq}$ \longleftrightarrow $[CO_{3}^{2-}]_{aq}$ + $H^{+}_{aq}$
+        
+        \item $[CaCO_{3}]_s$ \longleftrightarrow $[Ca^{2+}]_{aq}$ + $[CO_{3}^{2-}]_{aq}$
+    \end{enumerate}
+    
+    \textbf{Le Chatelier's principle} states that if a dynamic equilibrium is disturbed by changing the conditions, the position of equilibrium shifts to counteract the change to reestablish an equilibrium.
+    
+    Here if the amount of Atmospheric $CO_{2}_{g}$ increases then reaction(1) proceeds rightwards. The rate of the forward reaction of the buffering system increases until the system reaches a new equilibrium. This results in higher production of Carbonic Acid ($H_{2}CO_{3}$) that further dissociates, giving two H+ along with bicarbonate and carbonate anions. Since the concentration of H+ increases, \textbf{pH of seawater decreases.} 
+    
+    The chemical changes in the oceans caused by increases
+    in the concentration of $CO_{2}_{g}$ in the atmosphere will
+    include a (i)lowering of the pH; (ii)an increase in dissolved CO2;
+    (iii)a reduction in the concentration of carbonate ions and an
+    (iv)increase in bicarbonate ions.\\
+    
+     \subsection{\large 
+    \underline{Effects of decreased Ocean pH:}} (A decreased pH implies increased acidity)
+    \subsubsection{Effects on Marine lifeforms:}
+        \begin{enumerate}
+            \item The  major primary producers in the oceans are the benthic photosynthetic organisms, such as seaweed, sea grasses and corals. Changes in pH will affect the availability of nutrients and this may alter rates of growth and photosynthesis.
+            \item Increased acidity may lead to a change in cellular composition of the primary producers which could alter the nutritional value made available to the organisms that feed on them.
+            \item Larger marine animals that live in the oceans and do not breathe air (fish and some zooplankton), take up oxygen and lose respired $CO_2$ through their gills. Increased $CO_2$ and decreased pH could have a major effect on this respiratory gas exchange system.
+            \item A low pH and increased $CO_2$ concentration in seawater causes acidification of bodyfluids in marine organisms. This symptom is knowm as "Hypercapnia" and is detrimental to survival.
+            \item Metals exist in two forms in seawater; complex and free dissolved. Metal ions in low pH are generally the free dissolved form that is most toxic. A decrease in pH generally increases the proportion of free dissolved forms of toxic metals that is hazardous to many marine organisms.\cite{Theroyalscoiety2005}
+            \item The formation of shells or plates of $CaCO_3$, by calcification, is a widespread biological phenomenon among marine organisms (molluscs, corals, echinoderms and calcareous algae).To make these structures, seawater has to be supersaturated with calcium ($Ca^{2+}$) and carbonate ($CO3^{2–}$) ions. Lower pH reduces the carbonate saturation of the seawater, making calcification harder and also weakening any structures that have been formed.This causes tremendous loss of marine biodiversity and destruction of marine communities.
+        \end{enumerate}
+    
+    
+    
+    
+    \subsubsection{Effects on Long and Short term Carbon cycles}
+    The carbon cycle refers to the flow of carbon between the atmosphere, rocks, oceans and biosphere (all of Earth’s life forms).The long-term reservoir contains about 99.9 percent of the total carbon which is found mainly in rocks and fossil fuels and takes up to millions of years to recycle carbon dioxide.In the short-term reservoir, carbon is stored in the atmosphere, oceans and biosphere with the ocean containing the largest amount of carbon.\cite{online}
+        \begin{enumerate}
+            \item Decreased pH of the oceans will reduce their ability to absorb additional $CO_2$ from the atmosphere, which will in turn affects the rate and scale of global warming.
+            \item Increased [$H^+$] in seawater affects the natural process of calcareous shell formation in marine organisms and this directly retards the deposition of carbonate rocks on the seabed.
+            \item The process whereby carbon is transferred from the atmosphere to the deep ocean waters is referred to as the ‘biological pump’. A decreased pH changes the strength of this pump. This significantly alters the amount of carbon being sequestered to the deep ocean environments and therefore removed from the atmosphere.
+            \item The carbonate rocks formed in deep oceans are fundamentally different due to different pH conditions. This affects the rate of future fossil fuel formation and alters the natural processes of carbonate extraction.
+            \end{enumerate}
+    Therefore an increased $H^{+}$ ion concentration in oceans causes severe ramifications to the global carbon cycle by modifying the every stable states of the interacting dynamic feedback systems.\\
+    \line(1,0){500}\\
+    
+\section{\LARGE PART B}
+
+\begin{description}
+\item [Q1] Reverse geocoded Address: Cádiz - La Palma (Northwestern Africa - Mauritania)
+
+\item [Q2] Variation of $pCO_2$ levels (aperiodic oscillations/fluctuations)
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=16cm]{q2_graph.png}
+    \label{q2_grpah}
+\end{figure}
+
+\item [Q3] Variation of Sea surface temperature\\
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=13cm]{q2_graph_updated.PNG}
+    \label{q2_grpah}
+\end{figure}\\
+We observe an \textbf{oscillating trend} in sea surface temperature values. These oscillations have an approximate period of one to one-and-a-half years. The \textbf{annual temperature range} is between 19\degree C to 22\degree C wheres the minima is 17\degree C and maxima is 24\degree C.\\
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=17cm,height=8cm]{SST_analysis.PNG}
+    \label{yearly_sst}
+\end{figure}
+
+The average annual temperature between 1995 and 2009 is 20.81\degree C with a standard deviation of 0.763\degree C. The highest temperature was recorded on the $270^{th}$ day ie sometime in September whereas the lowest temperature was recorded on the $96^{th}$ ie sometime in April.\\
+
+
+\item [Q4 and Q5] \underline{Variation of ocean pH and pCO2 through time}
+
+\textbf{The pH of seawater has decreased over time}. This is evident from the plot of pH v/s time. We obtain a linear fit with a slope of -0.0015 and $R^2=0.2084$. This implies that every year, the pH of the seawater decreases by an average amount of 0.0015. A straightforward calculation yields an annual increase in $[H^{+}]$ by 0.996M.
+
+\textbf{The p$CO_2$ levels have increased over time}. This is evident from the plot of p$CO_2$ v/s time. We obtain a linear fit with a slope of 1.891 and $R^2=0.1475$. This implies that every year, the $pCO_2$ levels above the seawater increase by an average amount of 1.891 uatm.
+
+\textbf{\underline{pH v/s $pCO_2$ scatterplot}}\\
+On performing linear regression on pH v/s $pCO_2$ data, a linear best fit is obtained with an $R^2$=0.1929. Such a very low $R^2$ value indicates that the model explains very little variability of the response data around its mean.
+Nevertheless, we obtain a positive slope of 660.0 with a positive correlation value of r=0.445.
+
+\quad \quad The model suffers from high bias but predicts that \textbf{ $pCO_2$ levels increase with pH}. Physically, this is well explained by the carbonate-bicarbonate buffer in ocean water. When $[H^{+}]$ increases, the bicarbonate equilibrium is shifted to the right (see PART-A, question 1). This entails higher concentration of $H_{2}CO_{3}$. $H_{2}CO_{3}$ is in dynamic equilibrium with carbon dioxide and water. Thus an increased amount of $H_{2}CO_{3}$ produces higher $[CO_2]_{aq}$ and by Henry's Law, $pCO_2$ inceases.\\
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=18cm,height=12cm]{q45_graph.png}
+    \label{q2_grpah}
+\end{figure}\\
+\end{description}
+
+\bibliographystyle{plain}
+\bibliography{bib.bib}
+
+\end{document}
